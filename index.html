@@ -278,7 +278,7 @@
                 </button>
             </div>
 
-            <!-- ================= Pre W1 Content (RESTORED ORIGINAL TASKS) ================= -->
+            <!-- ================= Pre W1 Content ================= -->
             <div id="content-w1-pre">
                 <!-- Alert Banner -->
                 <div class="bg-red-50 dark:bg-red-900/10 border-l-4 border-red-500 p-6 mb-8 rounded-r-md shadow-sm">
@@ -440,7 +440,7 @@
                 </div>
             </div>
 
-            <!-- ================= Post W1 Content (RESTORED ORIGINAL TASKS) ================= -->
+            <!-- ================= Post W1 Content ================= -->
             <div id="content-w1-post" class="hidden">
                 <div class="bg-blue-50 dark:bg-blue-900/10 border-l-4 border-blue-500 p-6 mb-8 rounded-r-md shadow-sm">
                     <h4 class="text-blue-600 dark:text-blue-400 font-bold uppercase tracking-wider text-xs mb-4 flex items-center">
@@ -691,7 +691,7 @@
                     W3 (03/11)
                 </button>
                 <button onclick="switchTabW3W5('w4')" id="tab-w4" class="px-4 py-2 text-sm font-medium border-b-2 border-transparent text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition">
-                    W4 (Date TBD)
+                    W4 (03/18)
                 </button>
                 <button onclick="switchTabW3W5('w5')" id="tab-w5" class="px-4 py-2 text-sm font-medium border-b-2 border-transparent text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition">
                     W5 (Date TBD)
@@ -842,7 +842,7 @@
 
             <!-- ================= W4 CONTENT ================= -->
             <div id="content-w4" class="hidden">
-                 <!-- Alert Banner (Placeholder) -->
+                 <!-- Alert Banner -->
                  <div class="bg-yellow-50 dark:bg-yellow-900/10 border-l-4 border-yellow-500 p-6 mb-8 rounded-r-md shadow-sm">
                     <h4 class="text-yellow-600 dark:text-yellow-400 font-bold uppercase tracking-wider text-xs mb-4 flex items-center">
                         <i class="fas fa-exclamation-triangle mr-2"></i>
@@ -931,11 +931,74 @@
                 </div>
             </div>
 
-            <!-- ================= W5 CONTENT (Placeholder) ================= -->
+            <!-- ================= W5 CONTENT ================= -->
             <div id="content-w5" class="hidden">
-                <div class="tbd-card border border-dashed border-gray-300 dark:border-gray-600 rounded-lg h-40 flex flex-col items-center justify-center mt-8">
-                    <span class="text-xl font-bold text-gray-400 dark:text-gray-600">Module W5</span>
-                    <span class="text-xs text-gray-500 dark:text-gray-400 mt-1">Content Coming Soon</span>
+                 <!-- Alert Banner -->
+                 <div class="bg-blue-50 dark:bg-blue-900/10 border-l-4 border-blue-500 p-6 mb-8 rounded-r-md shadow-sm">
+                    <h4 class="text-blue-600 dark:text-blue-400 font-bold uppercase tracking-wider text-xs mb-4 flex items-center">
+                        <i class="fas fa-info-circle mr-2"></i>
+                        <span class="lang-en">W5 Reminders</span><span class="lang-zh hidden">W5 課前提醒</span>
+                    </h4>
+                    <p class="text-sm text-gray-700 dark:text-gray-300">
+                        <span class="lang-en">We will focus on LLMs, Prompting, and Image Generation this week. Remember to watch the Coursera videos before writing the worksheet.</span>
+                        <span class="lang-zh hidden">本週主題將聚焦於大型語言模型 (LLMs)、提示詞技巧與圖像生成。填寫學習單前請務必先觀看指定的 Coursera 影片。</span>
+                    </p>
+
+                    <!-- Global Leave Policy -->
+                    <div class="mt-4 bg-red-100/50 dark:bg-red-900/30 p-3 rounded-md border border-red-200 dark:border-red-800/50 flex items-start">
+                        <i class="fas fa-user-clock mt-1 mr-3 text-red-600 dark:text-red-400 shrink-0"></i>
+                        <div class="text-sm">
+                            <strong class="block text-red-700 dark:text-red-400 mb-0.5"><span class="lang-en">Leave Policy (Applies Every Week)</span><span class="lang-zh hidden">請假規定 (每週適用)</span></strong>
+                            <span class="text-gray-700 dark:text-gray-300"><span class="lang-en">If unable to attend, you MUST submit your leave request in advance on Moodle General ("Request for leave of absence & self-study note").</span><span class="lang-zh hidden">若無法出席，請務必提前於 Moodle General 區塊提交請假單與自學筆記。</span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- W5 Checklist -->
+                <div class="bg-white dark:bg-white/5 rounded-lg border border-gray-200 dark:border-gray-700 overflow-hidden shadow-md">
+                    <div class="px-6 py-4 border-b border-gray-200 dark:border-gray-700 flex justify-between items-center bg-gray-50 dark:bg-black/20">
+                        <h3 class="font-bold text-gray-800 dark:text-white text-sm uppercase tracking-wide flex items-center">
+                            <i class="fas fa-list-check mr-2 text-bcg-green"></i>
+                            <span class="lang-en">W5 Mission Checklist</span><span class="lang-zh hidden">W5 任務清單</span>
+                        </h3>
+                    </div>
+
+                    <div class="divide-y divide-gray-200 dark:divide-gray-700/50" id="checklist-container-w5">
+                        <!-- Task 1: Worksheet W5 -->
+                        <label class="flex items-start p-5 hover:bg-gray-50 dark:hover:bg-white/5 transition cursor-pointer">
+                            <input type="checkbox" class="custom-checkbox mt-1 mr-4 accent-bcg-green w-5 h-5">
+                            <div class="flex-1">
+                                <div class="flex items-center justify-between mb-1">
+                                    <span class="block text-gray-800 dark:text-white font-bold">
+                                        <span class="lang-en">Worksheet W5 (Part A & B)</span><span class="lang-zh hidden">學習單 W5 (A與B部分)</span>
+                                    </span>
+                                    <span class="text-[10px] bg-red-100 text-red-600 dark:bg-red-900/30 dark:text-red-400 px-2 py-0.5 rounded font-bold border border-red-200 dark:border-red-800/50">Due: TBD</span>
+                                </div>
+                                <span class="text-sm text-gray-600 dark:text-gray-400 block mb-2">
+                                    <span class="lang-en">Complete Part A (Hand-written) and Part B (AI Conversation Link). Submit both to Moodle W5.</span>
+                                    <span class="lang-zh hidden">完成 A部分 (手寫) 與 B部分 (AI對話連結)，並將兩者上傳至 Moodle W5 繳交區。</span>
+                                </span>
+                                <div class="mt-2 flex flex-wrap gap-2">
+                                    <a href="https://www.coursera.org/learn/generative-ai-for-everyone/home/module/1" target="_blank" onclick="event.stopPropagation()" class="flex items-center px-3 py-1.5 bg-white dark:bg-black/40 border border-gray-300 dark:border-gray-600 rounded text-xs font-bold text-gray-700 dark:text-gray-300 hover:border-blue-500 hover:text-blue-500 transition group-hover:bg-white">
+                                        <i class="fas fa-play-circle text-blue-500 mr-2"></i>
+                                        <span class="lang-en">Coursera Video Link</span><span class="lang-zh hidden">前往 Coursera 影片</span>
+                                    </a>
+                                    <a href="./PMCS-Worksheet-W5-GAI4E_LLM-Prompt-Image.pdf" download="PMCS-Worksheet-W5-GAI4E_LLM-Prompt-Image.pdf" onclick="event.stopPropagation()" class="flex items-center px-3 py-1.5 bg-white dark:bg-black/40 border border-gray-300 dark:border-gray-600 rounded text-xs font-bold text-gray-700 dark:text-gray-300 hover:border-bcg-green hover:text-bcg-green transition group-hover:bg-white">
+                                        <i class="fas fa-file-pdf text-red-500 mr-2"></i>
+                                        <span class="lang-en">Download W5 Worksheet</span><span class="lang-zh hidden">下載 W5 學習單</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+
+                    <!-- Progress Counter W5 -->
+                    <div class="bg-gray-50 dark:bg-black/20 px-6 py-3 border-t border-gray-200 dark:border-gray-700 text-right">
+                        <span class="text-xs font-mono text-gray-500 dark:text-gray-400">
+                            <span id="checked-count-w5" class="font-bold text-bcg-green">0</span>/<span id="total-count-w5">1</span> 
+                            <span class="lang-en">Completed</span><span class="lang-zh hidden">已完成</span>
+                        </span>
+                    </div>
                 </div>
             </div>
 
@@ -986,6 +1049,7 @@
         const themeToggle = document.getElementById('theme-toggle');
         const audioBtn = document.getElementById('audio-btn');
         const audioStatus = document.getElementById('audio-status');
+        const checklistInputs = document.querySelectorAll('.custom-checkbox');
         const sidebar = document.getElementById('sidebar');
         const overlay = document.getElementById('overlay');
 
@@ -1046,41 +1110,56 @@
             const isW1W2 = !document.getElementById('section-w1w2').classList.contains('hidden');
             const isW3W5 = !document.getElementById('section-w3w5').classList.contains('hidden');
 
+            // Header Info + Page Title
             if(currentLang === 'en') {
                 textToRead += "PMCS. Introduction to Project Management and Career Strategy. Course Notification. ";
             } else {
                 textToRead += "PMCS。AI世代產品經理職涯策略與專案管理導論。課程通知。";
             }
 
+            // Content Logic
             if(isOverview) {
                 if(currentLang === 'en') {
-                    textToRead += "Overview Section. Welcome to PMCS. Strategic thinking and project execution in the age of Artificial Intelligence.";
+                    textToRead += "Overview Section. Welcome to PMCS. Strategic thinking and project execution in the age of Artificial Intelligence. Please review the Course Syllabus and visit the 1142 Course Website.";
                 } else {
-                    textToRead += "綜覽頁面。歡迎來到 PMCS。這是人工智慧時代的策略思維與專案執行課程。";
+                    textToRead += "綜覽頁面。歡迎來到 PMCS。這是人工智慧時代的策略思維與專案執行課程。請參閱課程大綱，並造訪 1142 課程網頁。";
                 }
             } else if(isW1W2) {
-                if(currentLang === 'en') {
-                     textToRead += "Week 1 and 2 Orientation Section.";
+                // Determine active tab within W1W2
+                const isPre = !document.getElementById('content-w1-pre').classList.contains('hidden');
+                if(isPre) {
+                    if(currentLang === 'en') {
+                         textToRead += "Week 1 and 2 Orientation Section. Pre-Week 1 Content. Critical Alerts: English Proficiency B1 plus is required. High Workload Commitment. Drop policy applies. Logistics: Wednesday 8:10 AM at Management Building Room B15. Participation is 20 percent. Mission Checklist: Read the syllabus, watch assigned videos, complete the handwritten worksheet, and fill out the personal info form.";
+                    } else {
+                        textToRead += "第一週與第二週課程定位頁面。第一週課前內容。重要選課須知：英語能力要求 B1 以上，高強度投入。本課程有退選建議機制。行政資訊：週三早上八點十分，管院 B15 教室。出席佔分百分之二十。本週任務清單包括：閱讀大綱、觀看影片、完成手寫學習單，以及填寫個人資料表。";
+                    }
                 } else {
-                    textToRead += "第一週與第二週課程定位頁面。";
+                    if(currentLang === 'en') {
+                        textToRead += "Week 1 and 2 Orientation Section. Post-Week 1 Content. Reminders from TAs: Submit your info form and Worksheet W1. Record your self-introduction video and submit it by March 2nd. Don't forget to make your desk card and browse Moodle weekly.";
+                    } else {
+                        textToRead += "第一週與第二週課程定位頁面。第一週課後內容。助教提醒：請於期限內繳交個人資料表與學習單。錄製自我介紹影片並於三月二日前繳交。別忘了製作個人名牌，並每週瀏覽 Moodle。";
+                    }
                 }
             } else if(isW3W5) {
                 if(currentLang === 'en') {
-                    textToRead += "Week 3 to 5, Generative AI Section. Please check the current active tab for missions.";
+                    textToRead += "Week 3 to 5, Generative AI Section. Modules coming soon.";
                 } else {
-                     textToRead += "第三至五週，生成式 AI 頁面。請檢視目前標籤頁的任務內容。";
+                     textToRead += "第三至五週，生成式 AI 頁面。模組即將發布。";
                 }
             }
 
             speechUtterance = new SpeechSynthesisUtterance(textToRead);
             
+            // Voice Selection (Try best match)
             const voices = window.speechSynthesis.getVoices();
             if(currentLang === 'en') {
+                 // Try UK Male -> UK -> Any EN
                 const voice = voices.find(v => v.lang === 'en-GB' && v.name.includes('Male')) 
                            || voices.find(v => v.lang === 'en-GB') 
                            || voices.find(v => v.lang.startsWith('en'));
                 if(voice) speechUtterance.voice = voice;
             } else {
+                // Try TW -> CN
                 const voice = voices.find(v => v.lang === 'zh-TW') || voices.find(v => v.lang === 'zh-CN');
                 if(voice) speechUtterance.voice = voice;
             }
