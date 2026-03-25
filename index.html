@@ -873,13 +873,50 @@
                     </div>
 
                     <div class="divide-y divide-gray-200 dark:divide-gray-700/50" id="checklist-container-w4">
-                        <!-- Task 1 Placeholder -->
+                        <!-- Task 1: Worksheet W4 & W5 -->
                         <label class="flex items-start p-5 hover:bg-gray-50 dark:hover:bg-white/5 transition cursor-pointer">
                             <input type="checkbox" class="custom-checkbox mt-1 mr-4 accent-bcg-green w-5 h-5">
                             <div class="flex-1">
-                                <span class="block text-gray-800 dark:text-white font-bold mb-1">
-                                    <span class="lang-en">Task Title 1</span><span class="lang-zh hidden">任務標題 1</span>
+                                <div class="flex items-center justify-between mb-1">
+                                    <span class="block text-gray-800 dark:text-white font-bold">
+                                        <span class="lang-en">Worksheet W4 & W5 (Part A & B)</span><span class="lang-zh hidden">學習單 W4 與 W5 (A與B部分)</span>
+                                    </span>
+                                    <span class="text-[10px] bg-red-100 text-red-600 dark:bg-red-900/30 dark:text-red-400 px-2 py-0.5 rounded font-bold border border-red-200 dark:border-red-800/50">Due: 3/24(Tue.) 23:59</span>
+                                </div>
+                                <span class="text-sm text-gray-600 dark:text-gray-400 block mb-2">
+                                    <span class="lang-en">Complete Part A (Hand-written) and Part B (AI Conversation Link) for BOTH worksheets. Submit them to Moodle W4.</span>
+                                    <span class="lang-zh hidden">完成兩份學習單的 A部分 (手寫) 與 B部分 (AI對話連結)，並上傳至 Moodle W4。</span>
                                 </span>
+                                <div class="mt-2 flex flex-wrap gap-2">
+                                    <a href="./PMCS-Worksheet-W4-GAI4E_Writing-Reading-Chatting.pdf" download="PMCS-Worksheet-W4-GAI4E_Writing-Reading-Chatting.pdf" onclick="event.stopPropagation()" class="flex items-center px-3 py-1.5 bg-white dark:bg-black/40 border border-gray-300 dark:border-gray-600 rounded text-xs font-bold text-gray-700 dark:text-gray-300 hover:border-bcg-green hover:text-bcg-green transition group-hover:bg-white">
+                                        <i class="fas fa-file-pdf text-red-500 mr-2"></i>
+                                        <span class="lang-en">Download W4 Worksheet</span><span class="lang-zh hidden">下載 W4 學習單</span>
+                                    </a>
+                                    <a href="./PMCS-Worksheet-W5-GAI4E_LLM-Prompt-Image.pdf" download="PMCS-Worksheet-W5-GAI4E_LLM-Prompt-Image.pdf" onclick="event.stopPropagation()" class="flex items-center px-3 py-1.5 bg-white dark:bg-black/40 border border-gray-300 dark:border-gray-600 rounded text-xs font-bold text-gray-700 dark:text-gray-300 hover:border-bcg-green hover:text-bcg-green transition group-hover:bg-white">
+                                        <i class="fas fa-file-pdf text-red-500 mr-2"></i>
+                                        <span class="lang-en">Download W5 Worksheet</span><span class="lang-zh hidden">下載 W5 學習單</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </label>
+
+                        <!-- Task 2: D-ID Video -->
+                        <label class="flex items-start p-5 bg-yellow-50 dark:bg-yellow-500/10 hover:bg-yellow-100 dark:hover:bg-yellow-500/20 transition cursor-pointer border-l-4 border-yellow-500">
+                            <input type="checkbox" class="custom-checkbox mt-1 mr-4 accent-bcg-green w-5 h-5">
+                            <div class="flex-1">
+                                <div class="flex items-center justify-between mb-1">
+                                    <span class="block text-gray-800 dark:text-white font-bold">
+                                        <span class="lang-en">D-ID Self-Introduction Video</span><span class="lang-zh hidden">製作 D-ID 自我介紹影片</span>
+                                    </span>
+                                    <span class="text-[10px] bg-red-100 text-red-600 dark:bg-red-900/30 dark:text-red-400 px-2 py-0.5 rounded font-bold border border-red-200 dark:border-red-800/50">Due: 3/24(Tue.) 23:59</span>
+                                </div>
+                                <span class="text-sm text-gray-700 dark:text-gray-300 block mb-2">
+                                    <span class="lang-en">Use D-ID to generate an AI avatar speaking your self-introduction. Submit the video link to Moodle W4.</span>
+                                    <span class="lang-zh hidden">使用 D-ID 工具生成 AI 虛擬主播的自我介紹影片，並將影片連結繳交至 Moodle W4。</span>
+                                </span>
+                                <a href="https://studio.d-id.com/" target="_blank" onclick="event.stopPropagation()" class="inline-flex items-center text-xs text-blue-600 dark:text-blue-400 hover:underline bg-white dark:bg-black/30 px-2 py-1 rounded border border-gray-200 dark:border-gray-600 transition">
+                                    <i class="fas fa-magic mr-1"></i> Go to D-ID Studio
+                                </a>
                             </div>
                         </label>
                     </div>
@@ -887,7 +924,7 @@
                     <!-- Progress Counter W4 -->
                     <div class="bg-gray-50 dark:bg-black/20 px-6 py-3 border-t border-gray-200 dark:border-gray-700 text-right">
                         <span class="text-xs font-mono text-gray-500 dark:text-gray-400">
-                            <span id="checked-count-w4" class="font-bold text-bcg-green">0</span>/<span id="total-count-w4">1</span> 
+                            <span id="checked-count-w4" class="font-bold text-bcg-green">0</span>/<span id="total-count-w4">2</span> 
                             <span class="lang-en">Completed</span><span class="lang-zh hidden">已完成</span>
                         </span>
                     </div>
@@ -1175,7 +1212,8 @@
                 { id: '-post', suffix: '-post' }, // For W1-Post (original)
                 { id: '-w2', suffix: '-w2' }, // For W2
                 { id: '-w3', suffix: '-w3' }, // For W3
-                { id: '-w4', suffix: '-w4' }  // For W4
+                { id: '-w4', suffix: '-w4' }, // For W4
+                { id: '-w5', suffix: '-w5' }  // For W5
             ];
 
             sections.forEach(sec => {
