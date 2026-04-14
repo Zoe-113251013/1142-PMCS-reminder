@@ -173,7 +173,19 @@
                         <span class="w-6 text-center mr-3"><i class="fas fa-robot"></i></span>
                         <div>
                             <span class="lang-en">W3-5</span><span class="lang-zh hidden">第三至五週</span>
-                            <div class="text-[10px] text-bcg-green mt-1">GenAI</div>
+                            <div class="text-[10px] text-gray-400 mt-1">GenAI</div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" onclick="switchSection('w6w8')" id="nav-w6w8" class="block px-6 py-4 border-l-4 border-transparent text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-white/5 transition">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <span class="w-6 text-center mr-3"><i class="fas fa-briefcase"></i></span>
+                        <div>
+                            <span class="lang-en">W6-8</span><span class="lang-zh hidden">第六至八週</span>
+                            <div class="text-[10px] text-bcg-green mt-1">PM Role</div>
                         </div>
                     </div>
                     <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
@@ -182,7 +194,6 @@
 
             <!-- Future Modules -->
             <div class="px-6 mt-6 mb-2 text-[10px] font-bold text-gray-400 uppercase tracking-widest">Upcoming</div>
-            <a href="#" class="block px-6 py-3 text-gray-400 cursor-not-allowed flex items-center opacity-50"><i class="fas fa-briefcase w-6 mr-3"></i> W6-8 PM Role</a>
             <a href="#" class="block px-6 py-3 text-gray-400 cursor-not-allowed flex items-center opacity-50"><i class="fas fa-rocket w-6 mr-3"></i> W9 & 16 Project</a>
             <a href="#" class="block px-6 py-3 text-gray-400 cursor-not-allowed flex items-center opacity-50"><i class="fas fa-compass w-6 mr-3"></i> W10-12 Career</a>
             <a href="#" class="block px-6 py-3 text-gray-400 cursor-not-allowed flex items-center opacity-50"><i class="fas fa-tasks w-6 mr-3"></i> W13-15 PjM</a>
@@ -685,7 +696,7 @@
                 </h2>
             </div>
 
-            <!-- Tabs W3 & W4 -->
+            <!-- Tabs W3 & W4 & W5 -->
             <div class="flex space-x-2 mb-6 border-b border-gray-200 dark:border-gray-700">
                 <button onclick="switchTabW3W5('w3')" id="tab-w3" class="px-4 py-2 text-sm font-medium border-b-2 border-bcg-green text-bcg-green transition">
                     W3 (03/11(Wed.))
@@ -931,16 +942,50 @@
                 </div>
             </div>
 
-            <!-- ================= W5 CONTENT ================= -->
+            <!-- ================= W5 CONTENT (Placeholder) ================= -->
             <div id="content-w5" class="hidden">
-                 <!-- Alert Banner -->
-                 <div class="bg-blue-50 dark:bg-blue-900/10 border-l-4 border-blue-500 p-6 mb-8 rounded-r-md shadow-sm">
+                 <!-- 此區塊保留空白供未來新增內容使用 -->
+                 <div class="tbd-card border border-dashed border-gray-300 dark:border-gray-600 rounded-lg h-40 flex flex-col items-center justify-center mt-8">
+                    <span class="text-xl font-bold text-gray-400 dark:text-gray-600">Module W5</span>
+                    <span class="text-xs text-gray-500 dark:text-gray-400 mt-1">Content Coming Soon</span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ========================================== -->
+        <!-- SECTION: W6-8 PM Role -->
+        <!-- ========================================== -->
+        <div id="section-w6w8" class="hidden animate-fade-in">
+             <div class="mb-6 border-b border-gray-200 dark:border-gray-700 pb-4">
+                <h2 class="text-2xl font-light text-bcg-green uppercase tracking-wider">
+                    <span class="lang-en">W6-8 PM Role</span><span class="lang-zh hidden">第六至八週 產品經理角色</span>
+                </h2>
+            </div>
+
+            <!-- Tabs W6-W8 -->
+            <div class="flex space-x-2 mb-6 border-b border-gray-200 dark:border-gray-700">
+                <button onclick="switchTabW6W8('w6')" id="tab-w6" class="px-4 py-2 text-sm font-medium border-b-2 border-bcg-green text-bcg-green transition">
+                    W6 (04/01(Wed.))
+                </button>
+                <button onclick="switchTabW6W8('w7')" id="tab-w7" class="px-4 py-2 text-sm font-medium border-b-2 border-transparent text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition">
+                    W7 (04/08(Wed.))
+                </button>
+                <button onclick="switchTabW6W8('w8')" id="tab-w8" class="px-4 py-2 text-sm font-medium border-b-2 border-transparent text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition">
+                    W8 (04/15(Wed.))
+                </button>
+            </div>
+
+            <!-- ================= W6 CONTENT ================= -->
+            <div id="content-w6">
+                <!-- Alert Banner -->
+                <div class="bg-blue-50 dark:bg-blue-900/10 border-l-4 border-blue-500 p-6 mb-8 rounded-r-md shadow-sm">
                     <h4 class="text-blue-600 dark:text-blue-400 font-bold uppercase tracking-wider text-xs mb-4 flex items-center">
                         <i class="fas fa-info-circle mr-2"></i>
-                        <span class="lang-en">W5 Reminders</span><span class="lang-zh hidden">W5 課前提醒</span>
+                        <span class="lang-en">W6 Reminders</span><span class="lang-zh hidden">W6 課前提醒</span>
                     </h4>
                     <p class="text-sm text-gray-700 dark:text-gray-300">
-                        <span class="lang-en">We will move on to <strong>Product Management Introduction</strong> this week. Remember to watch the Coursera videos (M1: PM Profession Overview) before writing Worksheet W6.</span>
+                        <span class="lang-en">This week we dive into <strong>Product Management Introduction</strong>. Please ensure you watch the assigned Coursera videos (M1: PM Profession Overview) before completing Worksheet W6.</span>
                         <span class="lang-zh hidden">本週我們將進入<strong>產品管理導論</strong>。填寫 W6 學習單前請務必先觀看指定的 Coursera 影片 (M1: PM 專業概述)。</span>
                     </p>
 
@@ -954,16 +999,16 @@
                     </div>
                 </div>
 
-                <!-- W5 Checklist -->
+                <!-- W6 Checklist -->
                 <div class="bg-white dark:bg-white/5 rounded-lg border border-gray-200 dark:border-gray-700 overflow-hidden shadow-md">
                     <div class="px-6 py-4 border-b border-gray-200 dark:border-gray-700 flex justify-between items-center bg-gray-50 dark:bg-black/20">
                         <h3 class="font-bold text-gray-800 dark:text-white text-sm uppercase tracking-wide flex items-center">
                             <i class="fas fa-list-check mr-2 text-bcg-green"></i>
-                            <span class="lang-en">W5 Mission Checklist</span><span class="lang-zh hidden">W5 任務清單</span>
+                            <span class="lang-en">W6 Mission Checklist</span><span class="lang-zh hidden">W6 任務清單</span>
                         </h3>
                     </div>
 
-                    <div class="divide-y divide-gray-200 dark:divide-gray-700/50" id="checklist-container-w5">
+                    <div class="divide-y divide-gray-200 dark:divide-gray-700/50" id="checklist-container-w6">
                         <!-- Task 1: Worksheet W6 -->
                         <label class="flex items-start p-5 hover:bg-gray-50 dark:hover:bg-white/5 transition cursor-pointer">
                             <input type="checkbox" class="custom-checkbox mt-1 mr-4 accent-bcg-green w-5 h-5">
@@ -975,8 +1020,8 @@
                                     <span class="text-[10px] bg-red-100 text-red-600 dark:bg-red-900/30 dark:text-red-400 px-2 py-0.5 rounded font-bold border border-red-200 dark:border-red-800/50">Due: 3/31(Tue.) 23:59</span>
                                 </div>
                                 <span class="text-sm text-gray-600 dark:text-gray-400 block mb-2">
-                                    <span class="lang-en">Complete Part A (Hand-written) and Part B (AI Conversation Link: Persona, Vision, Stakeholder). Submit both to Moodle W5.</span>
-                                    <span class="lang-zh hidden">完成 A部分 (手寫) 與 B部分 (AI對話連結：人物誌、產品願景、利害關係人)，並將兩者上傳至 Moodle W5 繳交區。</span>
+                                    <span class="lang-en">Complete Part A (Hand-written) and Part B (AI Conversation Link: Persona, Vision, Stakeholder). Submit both to Moodle W6.</span>
+                                    <span class="lang-zh hidden">完成 A部分 (手寫) 與 B部分 (AI對話連結：人物誌、產品願景、利害關係人)，並將兩者上傳至 Moodle W6 繳交區。</span>
                                 </span>
                                 <div class="mt-2 flex flex-wrap gap-2">
                                     <a href="https://www.coursera.org/learn/product-management-an-introduction" target="_blank" onclick="event.stopPropagation()" class="flex items-center px-3 py-1.5 bg-white dark:bg-black/40 border border-gray-300 dark:border-gray-600 rounded text-xs font-bold text-gray-700 dark:text-gray-300 hover:border-blue-500 hover:text-blue-500 transition group-hover:bg-white">
@@ -992,16 +1037,170 @@
                         </label>
                     </div>
 
-                    <!-- Progress Counter W5 -->
+                    <!-- Progress Counter W6 -->
                     <div class="bg-gray-50 dark:bg-black/20 px-6 py-3 border-t border-gray-200 dark:border-gray-700 text-right">
                         <span class="text-xs font-mono text-gray-500 dark:text-gray-400">
-                            <span id="checked-count-w5" class="font-bold text-bcg-green">0</span>/<span id="total-count-w5">1</span> 
+                            <span id="checked-count-w6" class="font-bold text-bcg-green">0</span>/<span id="total-count-w6">1</span> 
                             <span class="lang-en">Completed</span><span class="lang-zh hidden">已完成</span>
                         </span>
                     </div>
                 </div>
             </div>
 
+            <!-- ================= W7 CONTENT ================= -->
+            <div id="content-w7" class="hidden">
+                <!-- Alert Banner -->
+                <div class="bg-blue-50 dark:bg-blue-900/10 border-l-4 border-blue-500 p-6 mb-8 rounded-r-md shadow-sm">
+                    <h4 class="text-blue-600 dark:text-blue-400 font-bold uppercase tracking-wider text-xs mb-4 flex items-center">
+                        <i class="fas fa-info-circle mr-2"></i>
+                        <span class="lang-en">W7 Reminders</span><span class="lang-zh hidden">W7 課前提醒</span>
+                    </h4>
+                    <p class="text-sm text-gray-700 dark:text-gray-300">
+                        <span class="lang-en">This week focuses on <strong>PM Skills & Business Acumen</strong>. Please ensure you watch the assigned Coursera videos before completing Worksheet W7.</span>
+                        <span class="lang-zh hidden">本週主題為<strong>產品經理技能與商業敏銳度 (PM Skills & Bus Acumen)</strong>。填寫 W7 學習單前請務必先觀看指定的 Coursera 影片。</span>
+                    </p>
+
+                    <!-- Global Leave Policy -->
+                    <div class="mt-4 bg-red-100/50 dark:bg-red-900/30 p-3 rounded-md border border-red-200 dark:border-red-800/50 flex items-start">
+                        <i class="fas fa-user-clock mt-1 mr-3 text-red-600 dark:text-red-400 shrink-0"></i>
+                        <div class="text-sm">
+                            <strong class="block text-red-700 dark:text-red-400 mb-0.5"><span class="lang-en">Leave Policy (Applies Every Week)</span><span class="lang-zh hidden">請假規定 (每週適用)</span></strong>
+                            <span class="text-gray-700 dark:text-gray-300"><span class="lang-en">If unable to attend, you MUST submit your leave request in advance on Moodle General ("Request for leave of absence & self-study note").</span><span class="lang-zh hidden">若無法出席，請務必提前於 Moodle General 區塊提交請假單與自學筆記。</span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- W7 Checklist -->
+                <div class="bg-white dark:bg-white/5 rounded-lg border border-gray-200 dark:border-gray-700 overflow-hidden shadow-md">
+                    <div class="px-6 py-4 border-b border-gray-200 dark:border-gray-700 flex justify-between items-center bg-gray-50 dark:bg-black/20">
+                        <h3 class="font-bold text-gray-800 dark:text-white text-sm uppercase tracking-wide flex items-center">
+                            <i class="fas fa-list-check mr-2 text-bcg-green"></i>
+                            <span class="lang-en">W7 Mission Checklist</span><span class="lang-zh hidden">W7 任務清單</span>
+                        </h3>
+                    </div>
+
+                    <div class="divide-y divide-gray-200 dark:divide-gray-700/50" id="checklist-container-w7">
+                        <!-- Task 1: Worksheet W7 -->
+                        <label class="flex items-start p-5 hover:bg-gray-50 dark:hover:bg-white/5 transition cursor-pointer">
+                            <input type="checkbox" class="custom-checkbox mt-1 mr-4 accent-bcg-green w-5 h-5">
+                            <div class="flex-1">
+                                <div class="flex items-center justify-between mb-1">
+                                    <span class="block text-gray-800 dark:text-white font-bold">
+                                        <span class="lang-en">Worksheet W7 (Part A & B)</span><span class="lang-zh hidden">學習單 W7 (A與B部分)</span>
+                                    </span>
+                                    <span class="text-[10px] bg-red-100 text-red-600 dark:bg-red-900/30 dark:text-red-400 px-2 py-0.5 rounded font-bold border border-red-200 dark:border-red-800/50">Due: 04/07(Tue.) 23:59</span>
+                                </div>
+                                <span class="text-sm text-gray-600 dark:text-gray-400 block mb-2">
+                                    <span class="lang-en">Complete Part A (Hand-written) and Part B (AI Conversation Link: PM Skills, Verification, Business Acumen). Submit both to Moodle W7.</span>
+                                    <span class="lang-zh hidden">完成 A部分 (手寫) 與 B部分 (AI對話連結：PM技能、驗證清單、商業敏銳度)，並將兩者上傳至 Moodle W7 繳交區。</span>
+                                </span>
+                                <div class="mt-2 flex flex-wrap gap-2">
+                                    <a href="https://www.coursera.org/learn/product-management-an-introduction" target="_blank" onclick="event.stopPropagation()" class="flex items-center px-3 py-1.5 bg-white dark:bg-black/40 border border-gray-300 dark:border-gray-600 rounded text-xs font-bold text-gray-700 dark:text-gray-300 hover:border-blue-500 hover:text-blue-500 transition group-hover:bg-white">
+                                        <i class="fas fa-play-circle text-blue-500 mr-2"></i>
+                                        <span class="lang-en">Coursera Video (PM Skills)</span><span class="lang-zh hidden">前往 Coursera 影片 (PM技能)</span>
+                                    </a>
+                                    <a href="./PMCS-Worksheet-W7.pdf" download="PMCS-Worksheet-W7.pdf" onclick="event.stopPropagation()" class="flex items-center px-3 py-1.5 bg-white dark:bg-black/40 border border-gray-300 dark:border-gray-600 rounded text-xs font-bold text-gray-700 dark:text-gray-300 hover:border-bcg-green hover:text-bcg-green transition group-hover:bg-white">
+                                        <i class="fas fa-file-pdf text-red-500 mr-2"></i>
+                                        <span class="lang-en">Download W7 Worksheet</span><span class="lang-zh hidden">下載 W7 學習單</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </label>
+
+                        <!-- Task 2: Q&A -->
+                        <label class="flex items-start p-5 hover:bg-gray-50 dark:hover:bg-white/5 transition cursor-pointer">
+                            <input type="checkbox" class="custom-checkbox mt-1 mr-4 accent-bcg-green w-5 h-5">
+                            <div class="flex-1">
+                                <div class="flex items-center justify-between mb-1">
+                                    <span class="block text-gray-800 dark:text-white font-bold">
+                                        <span class="lang-en">Q&A for Presenting Groups</span><span class="lang-zh hidden">針對報告組別提問</span>
+                                    </span>
+                                    <span class="text-[10px] bg-red-100 text-red-600 dark:bg-red-900/30 dark:text-red-400 px-2 py-0.5 rounded font-bold border border-red-200 dark:border-red-800/50">Due: 04/07(Tue.) 23:59</span>
+                                </div>
+                                <span class="text-sm text-gray-600 dark:text-gray-400 block mb-2">
+                                    <span class="lang-en">Prepare and submit questions for the groups presenting this week on Moodle.</span>
+                                    <span class="lang-zh hidden">在 Moodle 上針對本週負責報告的組別提出問題。</span>
+                                </span>
+                            </div>
+                        </label>
+                    </div>
+
+                    <!-- Progress Counter W7 -->
+                    <div class="bg-gray-50 dark:bg-black/20 px-6 py-3 border-t border-gray-200 dark:border-gray-700 text-right">
+                        <span class="text-xs font-mono text-gray-500 dark:text-gray-400">
+                            <span id="checked-count-w7" class="font-bold text-bcg-green">0</span>/<span id="total-count-w7">2</span> 
+                            <span class="lang-en">Completed</span><span class="lang-zh hidden">已完成</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ================= W8 CONTENT ================= -->
+            <div id="content-w8" class="hidden">
+                <!-- Alert Banner -->
+                <div class="bg-blue-50 dark:bg-blue-900/10 border-l-4 border-blue-500 p-6 mb-8 rounded-r-md shadow-sm">
+                    <h4 class="text-blue-600 dark:text-blue-400 font-bold uppercase tracking-wider text-xs mb-4 flex items-center">
+                        <i class="fas fa-info-circle mr-2"></i>
+                        <span class="lang-en">W8 Reminders</span><span class="lang-zh hidden">W8 課前提醒</span>
+                    </h4>
+                    <p class="text-sm text-gray-700 dark:text-gray-300">
+                        <span class="lang-en">This week focuses on <strong>From NPD to PM Competencies</strong>. There is <strong>no Coursera video</strong> assigned for this week. Please check Moodle W8 for all necessary reading materials.</span>
+                        <span class="lang-zh hidden">本週主題為<strong>新產品開發至產品經理職能 (From NPD to PM Competencies)</strong>。本週<strong>沒有</strong>指定的 Coursera 影片，請自行至 Moodle W8 查閱所有相關閱讀與補充資料。</span>
+                    </p>
+
+                    <!-- Global Leave Policy -->
+                    <div class="mt-4 bg-red-100/50 dark:bg-red-900/30 p-3 rounded-md border border-red-200 dark:border-red-800/50 flex items-start">
+                        <i class="fas fa-user-clock mt-1 mr-3 text-red-600 dark:text-red-400 shrink-0"></i>
+                        <div class="text-sm">
+                            <strong class="block text-red-700 dark:text-red-400 mb-0.5"><span class="lang-en">Leave Policy (Applies Every Week)</span><span class="lang-zh hidden">請假規定 (每週適用)</span></strong>
+                            <span class="text-gray-700 dark:text-gray-300"><span class="lang-en">If unable to attend, you MUST submit your leave request in advance on Moodle General ("Request for leave of absence & self-study note").</span><span class="lang-zh hidden">若無法出席，請務必提前於 Moodle General 區塊提交請假單與自學筆記。</span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- W8 Checklist -->
+                <div class="bg-white dark:bg-white/5 rounded-lg border border-gray-200 dark:border-gray-700 overflow-hidden shadow-md">
+                    <div class="px-6 py-4 border-b border-gray-200 dark:border-gray-700 flex justify-between items-center bg-gray-50 dark:bg-black/20">
+                        <h3 class="font-bold text-gray-800 dark:text-white text-sm uppercase tracking-wide flex items-center">
+                            <i class="fas fa-list-check mr-2 text-bcg-green"></i>
+                            <span class="lang-en">W8 Mission Checklist</span><span class="lang-zh hidden">W8 任務清單</span>
+                        </h3>
+                    </div>
+
+                    <div class="divide-y divide-gray-200 dark:divide-gray-700/50" id="checklist-container-w8">
+                        <!-- Task 1: Worksheet W8 -->
+                        <label class="flex items-start p-5 hover:bg-gray-50 dark:hover:bg-white/5 transition cursor-pointer">
+                            <input type="checkbox" class="custom-checkbox mt-1 mr-4 accent-bcg-green w-5 h-5">
+                            <div class="flex-1">
+                                <div class="flex items-center justify-between mb-1">
+                                    <span class="block text-gray-800 dark:text-white font-bold">
+                                        <span class="lang-en">Worksheet W8 (All 5 Questions)</span><span class="lang-zh hidden">學習單 W8 (需回答全部 5 題)</span>
+                                    </span>
+                                    <span class="text-[10px] bg-red-100 text-red-600 dark:bg-red-900/30 dark:text-red-400 px-2 py-0.5 rounded font-bold border border-red-200 dark:border-red-800/50">Due: 04/14(Tue.) 23:59</span>
+                                </div>
+                                <span class="text-sm text-gray-600 dark:text-gray-400 block mb-2">
+                                    <span class="lang-en">Complete the hand-written worksheet by doing your best to answer ALL five questions. Submit it to Moodle W8.</span>
+                                    <span class="lang-zh hidden">完成手寫學習單，請盡力回答全部 5 個問題，並將照片上傳至 Moodle W8 繳交區。</span>
+                                </span>
+                                <div class="mt-2 flex flex-wrap gap-2">
+                                    <a href="./PMCS-Worksheet-W8.pdf" download="PMCS-Worksheet-W8.pdf" onclick="event.stopPropagation()" class="flex items-center px-3 py-1.5 bg-white dark:bg-black/40 border border-gray-300 dark:border-gray-600 rounded text-xs font-bold text-gray-700 dark:text-gray-300 hover:border-bcg-green hover:text-bcg-green transition group-hover:bg-white">
+                                        <i class="fas fa-file-pdf text-red-500 mr-2"></i>
+                                        <span class="lang-en">Download W8 Worksheet</span><span class="lang-zh hidden">下載 W8 學習單</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+
+                    <!-- Progress Counter W8 -->
+                    <div class="bg-gray-50 dark:bg-black/20 px-6 py-3 border-t border-gray-200 dark:border-gray-700 text-right">
+                        <span class="text-xs font-mono text-gray-500 dark:text-gray-400">
+                            <span id="checked-count-w8" class="font-bold text-bcg-green">0</span>/<span id="total-count-w8">1</span> 
+                            <span class="lang-en">Completed</span><span class="lang-zh hidden">已完成</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 
@@ -1009,7 +1208,7 @@
     <footer class="fixed bottom-0 w-full h-14 bg-white dark:bg-black/95 border-t border-gray-200 dark:border-gray-800 flex items-center justify-between px-3 md:px-6 z-50 text-xs transition-colors duration-300">
         <!-- Left: Version & Instructor -->
         <div class="flex flex-col space-y-0.5">
-            <span class="text-[9px] text-gray-400 dark:text-gray-500 font-mono">v2026.03.13 &copy; NCNU</span>
+            <span class="text-[9px] text-gray-400 dark:text-gray-500 font-mono">v2026.02.14 &copy; NCNU</span>
             <div class="flex items-center space-x-1">
                 <span class="text-gray-500 uppercase font-bold text-[9px]">Inst.</span>
                 <a href="https://www.ibs.ncnu.edu.tw/index.php/faculty/tenured-professor/299-smlo" target="_blank" class="text-gray-800 dark:text-gray-300 hover:text-bcg-green dark:hover:text-white hover:underline transition font-medium">
@@ -1066,8 +1265,6 @@
         // 1. Theme Toggle
         themeToggle.addEventListener('click', () => {
             isDarkMode = !isDarkMode;
-            
-            // 正確切換 HTML 根元素的 dark 標籤 (Tailwind 的標準做法)
             document.documentElement.classList.toggle('dark');
             
             // Icon Update
@@ -1106,6 +1303,7 @@
             const isOverview = !document.getElementById('section-overview').classList.contains('hidden');
             const isW1W2 = !document.getElementById('section-w1w2').classList.contains('hidden');
             const isW3W5 = !document.getElementById('section-w3w5').classList.contains('hidden');
+            const isW6W8 = !document.getElementById('section-w6w8').classList.contains('hidden');
 
             // Header Info + Page Title
             if(currentLang === 'en') {
@@ -1142,6 +1340,12 @@
                     textToRead += "Week 3 to 5, Generative AI Section. Modules coming soon.";
                 } else {
                      textToRead += "第三至五週，生成式 AI 頁面。模組即將發布。";
+                }
+            } else if(isW6W8) {
+                if(currentLang === 'en') {
+                    textToRead += "Week 6 to 8, Product Manager Role Section.";
+                } else {
+                     textToRead += "第六至八週，產品經理角色頁面。";
                 }
             }
 
@@ -1186,7 +1390,7 @@
 
         // 4. Navigation & Tabs
         window.switchSection = function(sectionId) {
-            ['overview', 'w1w2', 'w3w5'].forEach(id => document.getElementById('section-' + id).classList.add('hidden'));
+            ['overview', 'w1w2', 'w3w5', 'w6w8'].forEach(id => document.getElementById('section-' + id).classList.add('hidden'));
             document.getElementById('section-' + sectionId).classList.remove('hidden');
             
             document.querySelectorAll('#sidebar a').forEach(el => {
@@ -1204,7 +1408,6 @@
             if (window.innerWidth < 1024) toggleSidebar();
         }
 
-        // W1W2 Tab Switcher
         window.switchTab = function(tabId) {
             const tabs = ['w1-pre', 'w1-post', 'w2'];
             
@@ -1266,6 +1469,37 @@
             }
         }
 
+        // W6-W8 Tab Switcher
+        window.switchTabW6W8 = function(tabId) {
+            const tabs = ['w6', 'w7', 'w8'];
+            
+            // Reset all tabs
+            tabs.forEach(t => {
+                const btn = document.getElementById('tab-' + t);
+                const content = document.getElementById('content-' + t);
+                
+                if (btn) {
+                    btn.classList.replace('border-bcg-green', 'border-transparent');
+                    btn.classList.replace('text-bcg-green', 'text-gray-500');
+                }
+                if (content) {
+                    content.classList.add('hidden');
+                }
+            });
+            
+            // Activate selected tab
+            const activeBtn = document.getElementById('tab-' + tabId);
+            const activeContent = document.getElementById('content-' + tabId);
+            
+            if (activeBtn) {
+                activeBtn.classList.replace('border-transparent', 'border-bcg-green');
+                activeBtn.classList.replace('text-gray-500', 'text-bcg-green');
+            }
+            if (activeContent) {
+                activeContent.classList.remove('hidden');
+            }
+        }
+
         // 5. Sidebar
         function toggleSidebar() {
             const isClosed = sidebar.classList.contains('-translate-x-full');
@@ -1284,12 +1518,15 @@
         // 6. Universal Checklist Counter Updater
         function updateChecklistCounter() {
             const sections = [
-                { id: '', suffix: '' }, // For W1-Pre (original)
-                { id: '-post', suffix: '-post' }, // For W1-Post (original)
+                { id: '', suffix: '' }, // For W1-Pre
+                { id: '-post', suffix: '-post' }, // For W1-Post
                 { id: '-w2', suffix: '-w2' }, // For W2
                 { id: '-w3', suffix: '-w3' }, // For W3
                 { id: '-w4', suffix: '-w4' }, // For W4
-                { id: '-w5', suffix: '-w5' }  // For W5
+                { id: '-w5', suffix: '-w5' }, // For W5
+                { id: '-w6', suffix: '-w6' }, // For W6
+                { id: '-w7', suffix: '-w7' }, // For W7
+                { id: '-w8', suffix: '-w8' }  // For W8
             ];
 
             sections.forEach(sec => {
